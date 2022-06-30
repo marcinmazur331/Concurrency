@@ -49,7 +49,6 @@ function zaczekaj_na_innych() { #numer_filozofa liczba_filozofow deskryptor_plik
 		while [[ $LICZNIK -gt 1 ]]
 		do
 			LICZNIK=$(($LICZNIK-$(cat $5|wc -l)))
-			echo dupa;
 		done
 	else
 		komunikat $1 "WYSCIG Nie udało się założyć blokady wyłącznej na pliku blokady $4"
